@@ -10,7 +10,9 @@
     "test:functional": "jest --projects ./test --runInBand",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\" ",
+    "style:fix": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" "
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.5",
@@ -28,6 +30,7 @@
     "@typescript-eslint/parser": "^4.2.0",
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
+    "prettier": "^2.1.2",
     "supertest": "^5.0.0",
     "ts-jest": "^26.4.0",
     "ts-node-dev": "^1.0.0-pre.63",
